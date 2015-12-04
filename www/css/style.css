@@ -1,0 +1,292 @@
+/* Empty. Add your own CSS if you like */
+/* Empty. Add your own CSS if you like */
+
+.imgHeader {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.header {
+    margin: 0 auto;
+    display: block;
+    background-color: #FFFFFF;
+}
+.footer {
+    height: 75px;
+    display: block;
+    background-color: #FFFFFF;
+    margin-bottom: 13px;
+    padding: 10px;
+}
+.btnFooter {
+    height: 65px;
+    display: block;
+    font-size: 2em !important;
+    padding-bottom: 10px;
+    background-color: #52D2C5;
+    color: #FFFFFF;
+    border-color: #52D2C5;
+}
+.ionView {
+    background-color: #FFFFFF;
+    padding-top: 50%;
+}
+p {
+    font-size: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 13px;
+    color: #000000;
+}
+.display-text{
+  font-size: 50%;
+}
+label.item.has-error {
+    border-bottom: 2px solid red;
+}
+label.item.has-error-lr {
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+label.item.valid-lr {
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+}
+.form-errors {
+    margin: 5px 0
+}
+.form-error {
+    padding: 2px 0 2px 16px;
+    color: red;
+}
+.countdonw {
+    background-color: #52d2c5;
+    height: 52%;
+    color: #FFFFFF !important;
+    padding-top: 23%;
+}
+.party-start {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bolder;
+    color: #FFFFFF !important;
+}
+.nasa-rodina {
+    font-weight: bold;
+    margin-top: 35px !important;
+    font-size: 300%;
+}
+.alreadySigned {
+    background-color: #FFFFFF;
+    height: 48%;
+}
+.signup-h2 {
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.counter {
+    font-size: 400%;
+    font-weight: bolder;
+    color: #FFFFFF !important;
+}
+/* Large desktop */
+
+@media (min-width: 1200px) {
+    .countdonw {
+        background-color: #52d2c5;
+        height: 52%;
+        color: #FFFFFF !important;
+        padding-top: 30%;
+    }
+    p {
+        font-size: 50px;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 200%;
+        color: #000000;
+    }
+    .nasa-rodina {
+        font-weight: bold;
+        margin-top: 60px !important;
+        margin-bottom: 50px !important;
+        font-size: 100px;
+    }
+    .party-start {
+        text-transform: uppercase;
+        font-size: 60px;
+        color: #FFFFFF !important;
+    }
+    .counter {
+        font-size: 150px;
+        font-weight: bolder;
+        color: #FFFFFF !important;
+    }
+    .alreadySigned {
+        background-color: #FFFFFF;
+        height: 52%;
+    }
+    .signup-h2 {
+        margin-top: 15px !important;
+    }
+}
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .countdonw {
+        background-color: #52d2c5;
+        height: 52%;
+        color: #FFFFFF !important;
+        padding-top: 20%;
+    }
+    p {
+        font-size: 30px;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 40px;
+        color: #000000;
+    }
+    .nasa-rodina {
+        font-weight: bold;
+        margin-top: 55px !important;
+        margin-bottom: 50px !important;
+        font-size: 60px;
+    }
+    .party-start {
+        text-transform: uppercase;
+        font-size: 250%;
+        color: #FFFFFF !important;
+    }
+    .counter {
+        font-size: 600%;
+        font-weight: bolder;
+        color: #FFFFFF !important;
+    }
+    .alreadySigned {
+        background-color: #FFFFFF;
+        height: 52%;
+    }
+    .signup-h2 {
+        margin-top: 15px !important;
+    }
+}
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) and (min-width: 481px) {
+    p {
+        font-size: 22px;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 45px;
+        color: #000000;
+    }
+    .nasa-rodina {
+        font-weight: bold;
+        margin-top: 40px !important;
+        margin-bottom: 25px !important;
+        font-size: 54px;
+    }
+    .party-start {
+        text-transform: uppercase;
+        font-size: 30px;
+        color: #FFFFFF !important;
+    }
+    .counter {
+        font-size: 70px;
+        font-weight: bolder;
+        color: #FFFFFF !important;
+    }
+    .alreadySigned {
+        background-color: #FFFFFF;
+        height: 52%;
+    }
+    .signup-h2 {
+        margin-top: 15px !important;
+    }
+}
+/* Landscape phones and down */
+
+@media (max-width: 480px) and (min-width: 375px) {
+    .countdonw {
+        background-color: #52d2c5;
+        height: 52%;
+        color: #FFFFFF !important;
+        padding-top: 25%;
+    }
+    p {
+        font-size: 16px;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 20px;
+        color: #000000;
+    }
+    .nasa-rodina {
+        font-weight: bold;
+        margin-top: 26px !important;
+        margin-bottom: 15px !important;
+        font-size: 32px;
+    }
+    .party-start {
+        text-transform: uppercase;
+        font-size: 17px;
+        color: #FFFFFF !important;
+        margin-bottom: 0 !important;
+    }
+    .counter {
+        font-size: 40px;
+        font-weight: bolder;
+        color: #FFFFFF !important;
+        margin-top: 0px !important;
+    }
+    .alreadySigned {
+        background-color: #FFFFFF;
+        height: 52%;
+    }
+    .signup-h2 {
+        margin-top: 15px !important;
+    }
+}
+/* Landscape phones and down */
+
+@media (max-width: 374px) {
+    .countdonw {
+        background-color: #52d2c5;
+        height: 52%;
+        color: #FFFFFF !important;
+        padding-top: 20%;
+    }
+    p {
+        font-size: 15px;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 15px;
+        color: #000000;
+    }
+    .nasa-rodina {
+        font-weight: bold;
+        margin-top: 26px !important;
+        margin-bottom: 15px !important;
+        font-size: 32px;
+    }
+    .party-start {
+        text-transform: uppercase;
+        font-size: 17px;
+        color: #FFFFFF !important;
+        margin-bottom: 0 !important;
+    }
+    .counter {
+        font-size: 40px;
+        font-weight: bolder;
+        color: #FFFFFF !important;
+        margin-top: 0px !important;
+    }
+    .alreadySigned {
+        background-color: #FFFFFF;
+        height: 52%;
+    }
+    .signup-h2 {
+        margin-top: 15px !important;
+    }
+}

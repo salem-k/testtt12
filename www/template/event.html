@@ -1,0 +1,95 @@
+<ion-view  ng-controller="EventController" ng-style="{'background-color':bgColor }">
+  <ion-content>
+    <!-- Normal Events-->
+    <div  ng-if=" ! isForm && !banner " >
+
+   <img   ng-if=" show " style="margin-top : {{marginTop}}px;margin-left : {{marginLeft}}px;max-width:{{maxWidth}}px !important;max-height:{{maxHeight}}px !important;width:{{width}}px;height:{{height}}px" ng-src="{{ imgSrc }}" />
+    <p class="display-text" ng-style="{'color' : textColor }" style="margin-top:{{marginTopText}}px;font-size:200%;line-height: 150%;"> {{text}}</p>
+    <label style="display:none">{{soundPlaying}}</label>
+    </div>
+
+    <!-- FORM Events -->
+    <form name="signupForm" ng-if=" isForm && ! alreadySigned && !banner" ng-submitted style="height:100%">
+    <div  style="height:100%">
+
+      <h2  class="signup-h2"> Sign up </h2>
+      <div class="list list-inset" style="margin-top: 65px;">
+
+
+
+       <span class="input-label" >FULL NAME</span>
+       <label class="item item-input"  ng-class="{ 'has-error-lr' : signupForm.fullname.$invalid  && submitted, 'valid-lr' : signupForm.fullname.$valid  && submitted}">
+
+         <input type="text" ng-model="fullname" ng-blur="blur()" ng-focus="focus()"
+                name="fullname"
+                ng-minlength="6"
+                required />
+       </label>
+        <span class="input-label">EMAIL</span>
+       <label class="item item-input" ng-class="{ 'has-error-lr' : signupForm.email.$invalid  && submitted, 'valid-lr' : signupForm.email.$valid  && submitted }">
+
+         <input type="email" ng-blur="blur()" ng-focus="focus()"
+                name="email"
+                ng-model="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                required />
+       </label>
+
+       <span class="input-label">PHONE</span>
+       <label class="item item-input"    ng-class="{ 'has-error-lr' : signupForm.phone.$invalid  && submitted, 'valid-lr' : signupForm.phone.$valid  && submitted}">
+        <input type="text" ng-blur="blur()" ng-focus="focus()"
+               name="phone"
+               ng-model="phone"
+               ng-maxlength="15"
+               required />
+      </label>
+     </div>
+     <div ng-if="focused" class="padding" style="position: fixed;width: 100%;bottom: 0;">
+
+         <input  type="submit" value="Create" ng-click="signup(signupForm)" class="button btnFooter button-block button-positive" >
+     </div>
+    </div>
+    </form>
+    <!-- already subscribed -->
+    <div ng-if="isForm &&  alreadySigned && !banner" class="alreadySigned" >
+      <h2 align="center" class="nasa-rodina">NA&#352;A RODINA</h2>
+      <p >
+        21:00 - 21:50 : N30 Akustika
+      </p>
+      <p >
+        22:05 - 23:00 : Riddim Colony
+      </p>
+      <p >
+        23:15 - 00:30 : United Flavour
+      </p>
+      <p >
+        00:30 - 01:15 : Jah Ova Evil & Mellow Mood
+      </p>
+      <p >
+        01:30 - 02:15 : Fireson Bantu
+      </p>
+      <p >
+        02:15 - 02:45 : Balans
+      </p>
+      <p>
+        02:45 - 05:00 Natty youth sound
+      </p>
+    </div>
+    <div ng-if="isForm &&  alreadySigned && !banner" class="countdonw">
+      <div>
+        <h1 align="center" class="party-start" >PARTY IS STARTING IN </h1>
+        <h1 align="center" class="counter"> {{ diffTime | countdonw }}</h1>
+      </div>
+    </div>
+    <div ng-if=" !isForm &&  !alreadySigned && banner" >
+      <div >
+        <img ng-src="{{imgBanner}}" width="100%"/>
+      </div>
+      <div>
+        <p ng-bind-html="text" style="text-align:justify !important;margin:12px">
+          {{text}}
+        </p>
+      </div>
+    </div>
+  </ion-content >
+</ion-view>
